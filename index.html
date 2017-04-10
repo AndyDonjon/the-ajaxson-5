@@ -2,20 +2,50 @@
 <html>
 <head>
     <title>The AJAXson 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="request-gif.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <h1>The AJAXson 5</h1>
+    <header>
+    <h1 class = "jumbotron">The AJAXson 5</h1>
+    </header>
 
-    <form id="form-gif-request" />
-        <label>What kind of Jackson 5 related gif do you want?</label>
-        <input name="tag" type="text"/>
-        <input type="submit" value="Get my Gif!" />
-    </form>
-
-    <img id="gif" src="" hidden="true"/>
-    <p id="feedback" hidden="true`"></p>
-
+    <div class="container main-content">
+        <div class="row">
+            <section>
+                <form id="form-gif-request">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <label>What kind of Jackson 5 related gif do you want?</label>
+                            <input name="tag" type="text" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <label>Prove you are not a robot by filling in this sentence: </label>
+                            <div class="input-group">
+                                <input id="captcha" type="text" class="form-control"/>
+                                <span class="input-group-addon">Jacksons are better than 1. </span>
+                            </div>
+                        </div>
+                    </div>
+                    <input class = "btn btn-primary" type="submit" value="Get My Gif!" />
+                </form>
+            </section>
+        </div>
+        <div class="row">
+            <div class="text-center">
+            <section>
+                <img class="img-fluid" id="gif" src="" hidden="true"/>
+                <p id="feedback" hidden="true"></p>
+            </section>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>

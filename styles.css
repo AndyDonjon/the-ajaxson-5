@@ -1,0 +1,23 @@
+.jumbotron{
+    text-align: center;
+    background-color: lightgrey;
+}
+
+body {
+    
+}
+
+input[type="text"] {
+    border: solid;
+    color: black;
+}
+
+.panel-default{
+    background-color: lightgrey;
+}
+
+.container {
+    display: block;
+    margin: auto;
+}
+
